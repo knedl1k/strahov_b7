@@ -1,0 +1,85 @@
+% Made by knedl1k in 2025
+% use however you want to
+
+\documentclass[12pt, a4paper]{article}
+\usepackage[czech]{babel}
+\usepackage[margin=0.2in]{geometry}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage{svg}
+\usepackage{tikz}
+\usepackage{pdfoverlay}
+\usetikzlibrary{math,calc,babel}
+
+\setmainfont{Ubuntu}
+\setlength{\parindent}{0pt}
+
+\newlength{\leftcolw}
+\setlength{\leftcolw}{0.40\linewidth}
+
+% \position{EN}{CZ}{names}
+\newcommand{\position}[3]{%
+    \begin{tabular*}{\linewidth}{@{}p{\leftcolw}@{\hspace{2.5em}}p{\dimexpr\linewidth-\leftcolw-1.5em\relax}@{}}
+        {\textcolor{gray}{#1}}\\[0.2ex]\textbf{#2} &
+        \begin{tabular}[t]{@{}l@{}}#3\end{tabular}\\[1.0ex]
+    \end{tabular*}\par
+}
+
+\begin{document}
+    \pdfoverlaySetPDF{b7_page.pdf}
+
+    Contact list of Block 7 representatives and room managers
+    \begin{center}
+        {\fontsize{65pt}{78pt}\selectfont KONTAKTY}
+
+        NA AKTIVNÍ ČLENY BLOKU 7
+    \end{center}
+    
+    \vspace{1cm}
+
+    \position{Block representative}{Zástupce bloku}{Matěj Jezdinský [428]}
+    \position{Vice block representative}{Místo zástupce bloku}{%
+    David Kovář [433]\\
+    Tomáš Suchomel [534]}
+    \position{Network administrator}{Síťový administrátor}{Jan Langmajer [539]}
+    \position{Network registrator}{Síťový registrátor}{%
+    Matěj Jezdinský [428]\\
+    Zdeněk Krajíček [430]\\
+    David Kovář [433]\\
+    Martin Houska [510]\\
+    Nikola Hlouchová [537]\\
+    Tomáš Suchomel [534]}
+    \position{Block gym manager}{Správce blokové posilovny}{Martin Krýcha [503]}
+    \position{Game room manager}{Správce herny}{%
+    Viktor Káčer [241]\\
+    Martin Pecko [308]\\
+    Ondřej Černý [334]}
+    \position{Study room manager}{Správce studovny}{Anička Loudová [540]}
+    \position{Common room manager}{Správce společenky}{%
+    Viktor Káčer [241]\\
+    Martin Pecko [308]\\
+    Martin Houska[510]}
+    \position{Tool storage manager}{Správce skladu nářadí}{%
+    Matěj Jezdinský [428]\\
+    Fabien Guillebot [506]\\
+    Jan Langmajer [539]}
+    \position{Vacuum cleaner manager}{Správce vysavače}{Jakub Šenk, Lenka Medková [526]}
+    \position{Washing room manager}{Správce prádelny}{%
+    Ondra Černý [334]\\
+    Nikola Hlouchová [534]}
+    \position{Community kitchen manager}{Správce blokové kuchyňky}{%
+    David Kovář [433]\\
+    Tomáš Suchomel [534]\\
+    Míra Mikulajský [535]\\
+    Jan Rosák [537]\\
+    Anička Loudová [540]}
+
+    % \begin{flushright}
+    %     \begin{tikzpicture}
+    %         \foreach \y in {1,...,5} 
+    %             \node[rotate=270] at ($5.74*(0, \y)$) {\includesvg[width=0.2\textheight]{../assets/b7.svg}};
+    %     \end{tikzpicture}
+    % \end{flushright}
+    
+\end{document}
