@@ -8,6 +8,7 @@ Compilation of individual posters:
 ```
 lualatex main.tex
 ```
+Ubuntu font is required: <https://design.ubuntu.com/font>
 
 ## License
 CC-BY-SA-4.0 license\
