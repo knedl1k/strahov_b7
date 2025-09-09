@@ -1,0 +1,90 @@
+% Made by knedl1k in 2025
+% use however you want to
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[czech]{babel}
+\usepackage[margin=0.2in]{geometry}
+\usepackage{tikz}
+\usepackage{fontspec}
+\usepackage{svg}
+
+\setlength{\parindent}{0pt}
+\setmainfont{Ubuntu}
+
+
+\newcommand{\datumA}{24. 9. 2024}
+\newcommand{\datumB}{3. 10. 2024}
+\newcommand{\datumC}{10. 10. 2024}
+\newcommand{\cas}{19:00}
+
+\begin{document}
+    {\fontsize{65pt}{78pt}\selectfont \textbf{POTŘEBUJEŠ}} 
+
+    {\fontsize{65pt}{78pt}\selectfont \textbf{INTERNET?}}
+
+    \vspace{1em}
+
+    {\fontsize{40pt}{48pt}\selectfont \textbf{DO YOU NEED}}
+
+    {\fontsize{40pt}{48pt}\selectfont \textbf{INTERNET?}}
+
+    \vspace{2cm}
+
+    \large
+    \begin{minipage}[c]{0.45\textwidth}
+        \textbf{TAK SE STAV NA HROMADNOU}
+
+        \textbf{REGISTRACI DO STRAHOVSKÉ}
+
+        \textbf{SÍTĚ!}
+
+        \textbf{HROMADNÉ REGISTRACE}
+
+        \textbf{PROBÍHAJÍ VE STUDOVNĚ V}
+
+        \textbf{MEZIPATŘE 3. A 4. POSCHODÍ}
+
+        \textbf{V NÁSLEDUJÍCÍCH TERMÍNECH:}
+    \end{minipage}%
+    \hspace{0.1\textwidth}%
+    \begin{minipage}[c]{0.45\textwidth}
+        \textbf{THEN STOP BY FOR BULK}
+
+        \textbf{REGISTRATION INTO THE DORM}
+
+        \textbf{INTERNET!}
+
+        \textbf{THE REGISTRATION WILL BE HELD}
+
+        \textbf{IN STUDY ROOM IN MEZZANINE}
+
+        \textbf{OF THIRD AND FOURTH FLOOR IN}
+
+        \textbf{THE FOLLOWING TERMS:}
+    \end{minipage}
+
+    \begin{center}
+        \begin{tikzpicture}[every node/.style={font=\bfseries\Huge}]
+            \node at (0,0) {\fontsize{40pt}{48pt}\selectfont \textbf{\datumA}};
+            \node at (3.5,-1.5) {\fontsize{40pt}{48pt}\selectfont \textbf{\datumB}};
+            \node at (6.5,-3) {\fontsize{40pt}{48pt}\selectfont \textbf{\datumC}};
+
+            \node[rotate=20-40] at (8,0.7) {\fontsize{40pt}{48pt}\selectfont \textbf{\cas}};
+        \end{tikzpicture}
+    \end{center}
+
+    OD 3. 9. DO 10. 10. REGISTRÁTOŘI \textbf{NEBUDOU PŘIJÍMAT REGISTRACE} \\ U SEBE NA POKOJÍCH. REGISTROVANÍ ČLENOVÉ
+    SE MŮŽOU V PŘÍPADĚ \\ PROBLÉMU OBRÁTIT NA EMAIL: \textbf{admin7@sh.cvut.cz}.
+
+    \vspace{1em}
+
+    FROM 3. 9. TILL 10. 10. REGISTRATORS \textbf{WON'T BE ACCEPTING ANYONE} \\ FOR REGISTRATION IN THEIR ROOMS. IF A 
+    REGISTRATED MEMBER WILL \\ REQUIRE HELP OF REGISTRATOR PLEASE CONTACT US THROUGH EMAIL: \\ 
+    \textbf{admin7@sh.cvut.cz}.
+
+    \begin{flushright}
+        \vfill
+        \includesvg[width=0.45\textwidth]{../assets/b7.svg}
+    \end{flushright}
+
+\end{document}
